@@ -6,13 +6,13 @@ import static steps.FindSteps.reply;
 import static steps.LoginSteps.auth;
 import static steps.MainSteps.clickShowAll;
 
-public class Runner extends ChromeWebHooks {
+public class Runner {
     @SneakyThrows
     public static void main(String[] args) {
-        setChromeWebHooks();
-        auth(User.ME);
+//        setChromeWebHooks();
+        auth(User.ZAUR);
         clickShowAll();
         reply();
-        closeBrowser();
+//        closeBrowser();
     }
 }
